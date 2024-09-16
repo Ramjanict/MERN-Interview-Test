@@ -7,8 +7,6 @@ const DrawingList = () => {
   const [data, setData] = useState([]);
   const [sample, setSample] = useState([]);
 
-  console.log("sample", sample);
-
   //Get all drawing
   const fetchdrawData = async () => {
     const fetchData = await fetch(Apisummary.allDrawing.url);

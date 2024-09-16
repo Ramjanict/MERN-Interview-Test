@@ -3,7 +3,6 @@ const drawingModel = require("../model/drawingModel");
 const updateDrawing = async (req, res) => {
   try {
     const { _id, ...resBody } = req.body;
-    console.log("doododod", resBody);
     const update = await drawingModel.findByIdAndUpdate(_id, resBody);
 
     res.status(201).json({
